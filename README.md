@@ -1,0 +1,1 @@
+This library exposes a msgpack api that partially mimics c# System.Text.Json.JsonElement.
