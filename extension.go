@@ -19,4 +19,9 @@ func newExtElement(value []byte) *extElement {
 	}
 }
 
+// NewExtElement creates an extension element from the given value.
+func NewExtElement(value []byte) *extElement {
+	return newExtElement(value)
+}
+
 var _ Elementer = &extElement{}

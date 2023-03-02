@@ -19,4 +19,9 @@ func newStringElement(value string) *stringElement {
 	}
 }
 
+// NewStringElement creates a string element from the given value.
+func NewStringElement(value string) *stringElement {
+	return newStringElement(value)
+}
+
 var _ Elementer = &stringElement{}

@@ -31,5 +31,12 @@ func newObjectElement(values []Elementer) *objectElement {
 	}
 }
 
-var _ Elementer = &objectElement{}
-var _ ObjectWrapper = &objectElement{}
+// NewObjectElement creates an object from the given values.
+func NewObjectElement(values []Elementer) *objectElement {
+	return newObjectElement(values)
+}
+
+var (
+	_ Elementer     = &objectElement{}
+	_ ObjectWrapper = &objectElement{}
+)

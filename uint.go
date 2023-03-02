@@ -19,4 +19,9 @@ func newUintElement(value uint64) *uintElement {
 	}
 }
 
+// NewUintElement creates an unsigned integer element from the given value.
+func NewUintElement(value uint64) *uintElement {
+	return newUintElement(value)
+}
+
 var _ Elementer = &uintElement{}

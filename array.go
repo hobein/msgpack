@@ -29,5 +29,12 @@ func newArrayElement(values []Elementer) *arrayElement {
 	}
 }
 
-var _ Elementer = &arrayElement{}
-var _ ArrayWrapper = &arrayElement{}
+// NewArrayElement creates an array from the given values.
+func NewArrayElement(values []Elementer) *arrayElement {
+	return newArrayElement(values)
+}
+
+var (
+	_ Elementer    = &arrayElement{}
+	_ ArrayWrapper = &arrayElement{}
+)

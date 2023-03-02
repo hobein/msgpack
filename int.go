@@ -19,4 +19,9 @@ func newIntElement(value int64) *intElement {
 	}
 }
 
+// NewIntElement creates an integer element from the given value.
+func NewIntElement(value int64) *intElement {
+	return newIntElement(value)
+}
+
 var _ Elementer = &intElement{}

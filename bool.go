@@ -19,4 +19,9 @@ func newBoolElement(value bool) *boolElement {
 	}
 }
 
+// NewBoolElement creates a bool element from the given value.
+func NewBoolElement(value bool) *boolElement {
+	return newBoolElement(value)
+}
+
 var _ Elementer = &boolElement{}

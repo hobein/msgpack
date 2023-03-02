@@ -19,4 +19,9 @@ func newBinElement(value []byte) *binElement {
 	}
 }
 
+// NewBinElement creates a binary element from the given bytes.
+func NewBinElement(value []byte) *binElement {
+	return newBinElement(value)
+}
+
 var _ Elementer = &binElement{}

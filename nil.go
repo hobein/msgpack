@@ -12,4 +12,9 @@ func newNilElement() *nilElement {
 	}
 }
 
+// NewNilElement creates a nil element.
+func NewNilElement() *nilElement {
+	return newNilElement()
+}
+
 var _ Elementer = &nilElement{}

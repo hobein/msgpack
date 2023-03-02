@@ -19,4 +19,9 @@ func newFloatElement(value float64) *floatElement {
 	}
 }
 
+// NewFloatElement creates a float element from the given value.
+func NewFloatElement(value float64) *floatElement {
+	return newFloatElement(value)
+}
+
 var _ Elementer = &floatElement{}
